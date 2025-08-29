@@ -1,6 +1,0 @@
-eclipse.preferences.version=1
-environment/project/com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.debug\#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt\:12.2.1.20221205/STUDIO_SDK_LOC/delimiter=;
-environment/project/com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.debug\#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt\:12.2.1.20221205/STUDIO_SDK_LOC/operation=append
-environment/project/com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.debug\#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt\:12.2.1.20221205/STUDIO_SDK_LOC/value=C\:/Users/iamfa/SimplicityStudio/SDKs/gecko_sdk
-environment/project/com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.debug\#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt\:12.2.1.20221205/append=true
-environment/project/com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.debug\#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt\:12.2.1.20221205/appendContributed=true
