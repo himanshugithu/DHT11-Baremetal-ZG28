@@ -1,0 +1,11 @@
+#CRC Codes for initially generated config files -- do not modify!
+buffer_pool_allocator_config.h=-542306717
+rail/profile_wisun_fan_1_0.restriction=-886690001
+rail/profile_wisun_fan_1_1.restriction=-60434286
+rail/profile_wisun_han.restriction=2053819207
+rail/radio_settings.radioconf=-1898287870
+sl_memory_config.h=-1757257759
+sl_simple_led_led0_config.h=-387326607
+sl_simple_led_led1_config.h=982966042
+wisun/lfn_not_supported.restriction=-1344575370
+wisun/wisun_settings.wisunconf=-1812518872

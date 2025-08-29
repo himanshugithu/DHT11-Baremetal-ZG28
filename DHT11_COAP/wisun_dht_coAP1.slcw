@@ -1,0 +1,7 @@
+---
+workspace_name: "wisun_dht_coAP1"
+label: "wisun_dht_coAP1"
+project:
+- id: "main"
+  path: "wisun_dht_coap_explorer_kit_ZG28.slcp"
+  output: "."
