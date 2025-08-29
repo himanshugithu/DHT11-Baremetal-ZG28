@@ -38,9 +38,9 @@ include:
       - { path: app_init.h }
       - { path: app_udp_server.h }
       - { path: app_tcp_server.h }
-      - { path: app_rtt_traces.h }
-      - { path: app_timestamp.h }
-sdk: { id: simplicity_sdk, version: 2025.6.1 }
+  - { path: app_rtt_traces.h }
+  - { path: app_timestamp.h }
+sdk: { id: gecko_sdk, version: 4.4.6 }
 toolchain_settings: []
 component:
   - { id: EFR32ZG28B312F1024IM48 }
