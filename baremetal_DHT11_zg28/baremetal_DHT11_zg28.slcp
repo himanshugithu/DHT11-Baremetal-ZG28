@@ -1,113 +1,121 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
 project_name: baremetal_DHT11_zg28
 label: baremetal_DHT11_zg28
-description: The Wi-SUN Empty sample application is a bare-bones application. This
+description:
+  The Wi-SUN Empty sample application is a bare-bones application. This
   application can be used as a template to develop a Wi-SUN application.
 category: Wi-SUN Examples
 filter:
-- name: Device Type
-  value: [SoC]
-- name: Project Difficulty
-  value: [Beginner]
-- name: Wireless Technology
-  value: [Wi-SUN]
+  - name: Device Type
+    value: [SoC]
+  - name: Project Difficulty
+    value: [Beginner]
+  - name: Wireless Technology
+    value: [Wi-SUN]
 package: wisun
 quality: production
 readme:
-- {path: readme.md}
-- {path: readme.md}
+  - { path: readme.md }
+  - { path: readme.md }
 source:
-- {path: app.c}
-- {path: app_init.c}
-- {path: main.c}
+  - { path: app.c }
+  - { path: app_init.c }
+  - { path: main.c }
+  - { path: dht.c }
 include:
-- path: .
-  file_list:
-  - {path: app.h}
-  - {path: app_init.h}
-sdk: {id: gecko_sdk, version: 4.4.6}
+  - path: .
+    file_list:
+      - { path: app.h }
+      - { path: app_init.h }
+      - { path: dht.h }
+sdk: { id: gecko_sdk, version: 4.4.6 }
 toolchain_settings:
-- {value: debug, option: optimize}
+  - { value: debug, option: optimize }
 component:
-- {id: EFR32ZG28B312F1024IM48}
-- {id: brd2705a}
-- {id: device_init}
-- {id: iostream_recommended_stream}
-- {id: iostream_retarget_stdio}
-- {id: micriumos_kernel}
-- {id: nvm3_default}
-- {id: printf}
-- {id: radio_config_brd_wisun_singlephy}
-- {id: restrictions_profile_wisun_fan_1_0}
-- {id: restrictions_profile_wisun_fan_1_1}
-- {id: restrictions_profile_wisun_han}
-- {id: segger_rtt}
-- {id: silabs_core_sl_malloc}
-- {id: sl_system}
-- {id: sl_wisun_app_core}
-- {id: sl_wisun_trace_util}
-- {id: sleeptimer}
-- {id: slist}
-- {id: wisun_config}
-- {id: wisun_stack}
-- {id: wisun_stack_debug}
-- {id: wisun_stack_lfn}
+  - { id: EFR32ZG28B312F1024IM48 }
+  - { id: brd2705a }
+  - { id: device_init }
+  - { id: iostream_recommended_stream }
+  - { id: iostream_retarget_stdio }
+  - { id: micriumos_kernel }
+  - { id: nvm3_default }
+  - { id: printf }
+  - { id: radio_config_brd_wisun_singlephy }
+  - { id: restrictions_profile_wisun_fan_1_0 }
+  - { id: restrictions_profile_wisun_fan_1_1 }
+  - { id: restrictions_profile_wisun_han }
+  - { id: segger_rtt }
+  - { id: silabs_core_sl_malloc }
+  - { id: sl_system }
+  - { id: sl_wisun_app_core }
+  - { id: sl_wisun_trace_util }
+  - { id: sleeptimer }
+  - { id: slist }
+  - { id: wisun_config }
+  - { id: wisun_stack }
+  - { id: wisun_stack_debug }
+  - { id: wisun_stack_lfn }
 other_file:
-- {path: readme_img0.png}
+  - { path: readme_img0.png }
 define:
-- {name: DEBUG_EFM}
+  - { name: DEBUG_EFM }
 requires:
-- {name: cmsis_rtos2}
+  - { name: cmsis_rtos2 }
 configuration:
-- {name: SL_BOARD_ENABLE_VCOM, value: '1'}
-- {name: SL_IOSTREAM_USART_VCOM_FLOW_CONTROL_TYPE, value: usartHwFlowControlNone}
-- {name: SL_IOSTREAM_USART_VCOM_CONVERT_BY_DEFAULT_LF_TO_CRLF, value: '1'}
-- {name: SL_CLI_LOCAL_ECHO, value: (1)}
-- {name: SL_IOSTREAM_EUSART_VCOM_FLOW_CONTROL_TYPE, value: eusartHwFlowControlNone}
-- {name: SL_IOSTREAM_EUSART_VCOM_CONVERT_BY_DEFAULT_LF_TO_CRLF, value: '1'}
-- condition: [micriumos_kernel]
-  name: OS_CFG_APP_HOOKS_EN
-  value: '1'
-- condition: [freertos]
-  name: configUSE_POSIX_ERRNO
-  value: '1'
-- condition: [micriumos_kernel]
-  name: OS_CFG_ERRNO_EN
-  value: '1'
-- condition: [hardware_board_has_eff]
-  name: SL_RAIL_UTIL_PA_SELECTION_SUBGHZ
-  value: RAIL_TX_POWER_MODE_SUBGIG_EFF_POWERSETTING_TABLE
-- condition: [hardware_board_has_eff]
-  name: RAIL_UTIL_EFF_MAX_TX_CONTINUOUS_POWER_DBM
-  value: '20'
-- condition: [hardware_board_has_eff]
-  name: RAIL_UTIL_EFF_MAX_TX_DUTY_CYCLE
-  value: '100'
-- {name: SL_RAIL_UTIL_PTI_BAUD_RATE_HZ, value: '3200000'}
-- condition: [iostream_eusart, power_manager]
-  name: SL_IOSTREAM_EUSART_INSTANCE_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
-  value: '0'
-- condition: [iostream_eusart, power_manager]
-  name: SL_IOSTREAM_EUSART_VCOM_BAUDRATE
-  value: '9600'
-- condition: [iostream_eusart, power_manager]
-  name: SL_IOSTREAM_EUSART_VCOM_ENABLE_HIGH_FREQUENCY
-  value: '0'
-- condition: [iostream_eusart, power_manager]
-  name: SL_IOSTREAM_EUSART_VCOM_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
-  value: '0'
-- condition: [iostream_leuart, power_manager]
-  name: SL_IOSTREAM_LEUART_VCOM_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
-  value: '0'
-- condition: [device_sdid_220, hardware_board_default_rf_band_470]
-  name: SL_DEVICE_INIT_RFFPLL_BAND
-  value: '1'
-- {name: SL_HEAP_SIZE, value: '0xD400'}
-- {name: APP_PROJECT_INFO_APP_VERSION_MAJOR, value: '2'}
-- {name: APP_PROJECT_INFO_APP_VERSION_MINOR, value: '0'}
-- {name: APP_PROJECT_INFO_APP_VERSION_PATCH, value: '0'}
+  - { name: SL_BOARD_ENABLE_VCOM, value: "1" }
+  - {
+      name: SL_IOSTREAM_USART_VCOM_FLOW_CONTROL_TYPE,
+      value: usartHwFlowControlNone,
+    }
+  - { name: SL_IOSTREAM_USART_VCOM_CONVERT_BY_DEFAULT_LF_TO_CRLF, value: "1" }
+  - { name: SL_CLI_LOCAL_ECHO, value: (1) }
+  - {
+      name: SL_IOSTREAM_EUSART_VCOM_FLOW_CONTROL_TYPE,
+      value: eusartHwFlowControlNone,
+    }
+  - { name: SL_IOSTREAM_EUSART_VCOM_CONVERT_BY_DEFAULT_LF_TO_CRLF, value: "1" }
+  - condition: [micriumos_kernel]
+    name: OS_CFG_APP_HOOKS_EN
+    value: "1"
+  - condition: [freertos]
+    name: configUSE_POSIX_ERRNO
+    value: "1"
+  - condition: [micriumos_kernel]
+    name: OS_CFG_ERRNO_EN
+    value: "1"
+  - condition: [hardware_board_has_eff]
+    name: SL_RAIL_UTIL_PA_SELECTION_SUBGHZ
+    value: RAIL_TX_POWER_MODE_SUBGIG_EFF_POWERSETTING_TABLE
+  - condition: [hardware_board_has_eff]
+    name: RAIL_UTIL_EFF_MAX_TX_CONTINUOUS_POWER_DBM
+    value: "20"
+  - condition: [hardware_board_has_eff]
+    name: RAIL_UTIL_EFF_MAX_TX_DUTY_CYCLE
+    value: "100"
+  - { name: SL_RAIL_UTIL_PTI_BAUD_RATE_HZ, value: "3200000" }
+  - condition: [iostream_eusart, power_manager]
+    name: SL_IOSTREAM_EUSART_INSTANCE_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
+    value: "0"
+  - condition: [iostream_eusart, power_manager]
+    name: SL_IOSTREAM_EUSART_VCOM_BAUDRATE
+    value: "9600"
+  - condition: [iostream_eusart, power_manager]
+    name: SL_IOSTREAM_EUSART_VCOM_ENABLE_HIGH_FREQUENCY
+    value: "0"
+  - condition: [iostream_eusart, power_manager]
+    name: SL_IOSTREAM_EUSART_VCOM_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
+    value: "0"
+  - condition: [iostream_leuart, power_manager]
+    name: SL_IOSTREAM_LEUART_VCOM_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
+    value: "0"
+  - condition: [device_sdid_220, hardware_board_default_rf_band_470]
+    name: SL_DEVICE_INIT_RFFPLL_BAND
+    value: "1"
+  - { name: SL_HEAP_SIZE, value: "0xD400" }
+  - { name: APP_PROJECT_INFO_APP_VERSION_MAJOR, value: "2" }
+  - { name: APP_PROJECT_INFO_APP_VERSION_MINOR, value: "0" }
+  - { name: APP_PROJECT_INFO_APP_VERSION_PATCH, value: "0" }
 ui_hints:
   highlight:
-  - {path: config/wisun/wisun_settings.wisunconf}
-  - {path: readme.md, focus: true}
-
+    - { path: config/wisun/wisun_settings.wisunconf }
+    - { path: readme.md, focus: true }
