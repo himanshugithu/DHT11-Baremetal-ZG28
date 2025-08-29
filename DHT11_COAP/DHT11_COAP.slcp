@@ -60,8 +60,6 @@ component:
   - { id: restrictions_profile_wisun_han }
   - { id: segger_rtt }
   - { id: segger_rtt_printf }
-  - instance: [led0]
-    id: simple_led
   - { id: sl_system }
   - { id: sl_wisun_app_core }
   - { id: sl_wisun_coap }
