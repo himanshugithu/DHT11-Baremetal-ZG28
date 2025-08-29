@@ -968,24 +968,26 @@
       </folder>
     </folder>
   </folder>
-  <file name="app_check_neighbors.c" linked="false" uri="studio:/project/app_check_neighbors.c"/>
-  <file name="app_coap.c" linked="false" uri="studio:/project/app_coap.c"/>
-  <file name="app.c" linked="false" uri="studio:/project/app.c"/>
-  <file name="app_init.c" linked="false" uri="studio:/project/app_init.c"/>
-  <file name="app_tcp_server.c" linked="false" uri="studio:/project/app_tcp_server.c"/>
-  <file name="app_udp_server.c" linked="false" uri="studio:/project/app_udp_server.c"/>
-  <file name="app_rtt_traces.c" linked="false" uri="studio:/project/app_rtt_traces.c"/>
-  <file name="app_timestamp.c" linked="false" uri="studio:/project/app_timestamp.c"/>
-  <file name="main.c" linked="false" uri="studio:/project/main.c"/>
-  <file name="app_check_neighbors.h" linked="false" uri="studio:/project/app_check_neighbors.h"/>
-  <file name="app_coap.h" linked="false" uri="studio:/project/app_coap.h"/>
-  <file name="app.h" linked="false" uri="studio:/project/app.h"/>
-  <file name="app_init.h" linked="false" uri="studio:/project/app_init.h"/>
-  <file name="app_udp_server.h" linked="false" uri="studio:/project/app_udp_server.h"/>
-  <file name="app_tcp_server.h" linked="false" uri="studio:/project/app_tcp_server.h"/>
-  <file name="app_rtt_traces.h" linked="false" uri="studio:/project/app_rtt_traces.h"/>
-  <file name="app_timestamp.h" linked="false" uri="studio:/project/app_timestamp.h"/>
-  <file name="README.md" linked="false" uri="studio:/project/README.md"/>
+  <file name="app_check_neighbors.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_check_neighbors.c"/>
+  <file name="app_coap.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_coap.c"/>
+  <file name="app.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app.c"/>
+  <file name="app_init.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_init.c"/>
+  <file name="app_tcp_server.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_tcp_server.c"/>
+  <file name="app_udp_server.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_udp_server.c"/>
+  <file name="app_rtt_traces.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_rtt_traces.c"/>
+  <file name="app_timestamp.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_timestamp.c"/>
+  <file name="dht.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/dht.c"/>
+  <file name="main.c" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/main.c"/>
+  <file name="app_check_neighbors.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_check_neighbors.h"/>
+  <file name="app_coap.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_coap.h"/>
+  <file name="app.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app.h"/>
+  <file name="app_init.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_init.h"/>
+  <file name="app_udp_server.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_udp_server.h"/>
+  <file name="app_tcp_server.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_tcp_server.h"/>
+  <file name="app_rtt_traces.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_rtt_traces.h"/>
+  <file name="app_timestamp.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/app_timestamp.h"/>
+  <file name="dht.h" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/dht.h"/>
+  <file name="README.md" linked="false" uri="file:/C:/SiliconLabs/SimplicityStudio/v5/developer/repos/DHT11-Baremetal-ZG28/COAP_DHT11_ZG28/README.md"/>
   <excludedPath>gecko_sdk_4.4.6/protocol/wisun/LICENSE</excludedPath>
   <includePath uri="studio:/project/"/>
   <includePath uri="studio:/sdk/platform/Device/SiliconLabs/EFR32ZG28/Include"/>
