@@ -2,8 +2,8 @@
 project_name: baremetal_DHT11_zg28
 label: baremetal_DHT11_zg28
 description:
-  The Wi-SUN Empty sample application is a bare-bones application. This
-  application can be used as a template to develop a Wi-SUN application.
+  This example demonstrates how to interface a DHT11 temperature and humidity sensor
+  with a Silicon Labs EFR32ZG28 device using baremetal programming.
 category: Wi-SUN Examples
 filter:
   - name: Device Type
