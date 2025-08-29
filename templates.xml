@@ -14,7 +14,7 @@
     <properties key="projectDifficulty" value="Beginner"/>
   </descriptors>
 
-  <descriptors name="DHT11 + COAP" label="DHT11 + COAP" description="This example demonstrates how to interface a DHT11 temperature and humidity sensor with a Silicon Labs EFR32ZG28 device and fetch data using COAP protocol. The example includes code to read data from the DHT11 sensor and send it over COAP. It is designed for simplicity and ease of understanding, making it suitable for beginners looking to learn about sensor interfacing and COAP on Silicon Labs devices." author="Himanshu Fanibhare">
+  <descriptors name="DHT11_COAP" label="DHT11_COAP" description="This example demonstrates how to interface a DHT11 temperature and humidity sensor with a Silicon Labs EFR32ZG28 device and fetch data using COAP protocol. The example includes code to read data from the DHT11 sensor and send it over COAP. It is designed for simplicity and ease of understanding, making it suitable for beginners looking to learn about sensor interfacing and COAP on Silicon Labs devices." author="Himanshu Fanibhare">
     <properties key="namespace" value="template.uc"/>
   <properties key="projectFilePaths" value="wisun_dht_coAP1/wisun_dht_coAP1.slcp"/>
   <properties key="readmeFiles" value="wisun_dht_coAP1/README.md"/>
