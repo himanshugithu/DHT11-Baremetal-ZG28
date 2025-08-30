@@ -114,7 +114,3 @@ configuration:
   - { name: APP_PROJECT_INFO_APP_VERSION_MAJOR, value: "2" }
   - { name: APP_PROJECT_INFO_APP_VERSION_MINOR, value: "0" }
   - { name: APP_PROJECT_INFO_APP_VERSION_PATCH, value: "0" }
-ui_hints:
-  highlight:
-    - { path: config/wisun/wisun_settings.wisunconf }
-  - { path: readme.md }
