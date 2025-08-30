@@ -38,19 +38,15 @@ typedef struct {
 
 1. **Copy the GitHub Repository Link**
    - `https://github.com/himanshugithu/Wi-SUN-DHT11.git`
-
 2. **Open Simplicity Studio**
-
 3. **Add External Repository**
    - Go to `Preferences` > `Simplicity Studio` > `External Repos`.
    - Click on `New` and paste the GitHub link above.
-
 4. **Import the Project**
    - Go to the `Launcher` tab.
    - Select `Example Projects and Demos`.
    - In the list, under the provider section, find `dht baremetal-zg28` project.
    - Click on `Create` to automatically import the project into your workspace.
-
 5. **Connect Hardware**
    - Connect the DHT11 data pin to Port C, Pin 1 (default in code: `gpioPortC`, pin 1).
    - Adjust `DHT11_PORT` and `DHT11_PIN` in `dht.c` if using a different pin.
