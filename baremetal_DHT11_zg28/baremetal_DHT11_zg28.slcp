@@ -55,8 +55,7 @@ component:
   - { id: wisun_stack }
   - { id: wisun_stack_debug }
   - { id: wisun_stack_lfn }
-other_file:
-  - { path: readme_img0.png }
+other_file: []
 define:
   - { name: DEBUG_EFM }
 requires:
@@ -118,4 +117,4 @@ configuration:
 ui_hints:
   highlight:
     - { path: config/wisun/wisun_settings.wisunconf }
-    - { path: readme.md, focus: true }
+  - { path: readme.md }
